@@ -39,11 +39,15 @@ PawConnect serves as a comprehensive academic project that showcases practical i
 
 ---
 ### UML
-![High-Level Diagram](UML.drawio.png)
+![UML](UML.drawio.png)
 
 The UML diagram represents the core class structure of the PawConnect system. It shows relationships such as inheritance (between User, Adopter, and Staff), composition (PetManager and ApplicationManager), aggregation (Adopter → Application), and associations (Application with Pet and Adopter). Key class attributes and functions are also outlined to highlight system design and logic flow.
-
+---
 ### Flow Chart
+![UML](UML.drawio.png)
+
+
+
 
 
 
