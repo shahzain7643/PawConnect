@@ -1,12 +1,8 @@
-#include <iostream>
-#include "User.h"
-#include "Dynamic_array.h"
-#include <string>
-#include "Pets.h"
 #include "Application.h"
+#include "Pets.h"
 #include "Adopter.h"
-#include "raylib.h"
-#include "Staff.h"
+#include <iostream>
+#include <string>
 using namespace std;
 
 

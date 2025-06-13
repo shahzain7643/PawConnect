@@ -1,40 +1,27 @@
-#ifndef Staff_H
-#define Staff_H
-#include <iostream>
+#ifndef STAFF_H
+#define STAFF_H
+
+#include <string>
 #include "User.h"
 #include "Dynamic_array.h"
-#include <string>
-#include "Pets.h"
-#include "Application.h"
-#include "Adopter.h"
-#include "raylib.h"
-#include "Staff.h"
+
+class Pet;
+class Application;
+
 using namespace std;
 
-
-class Staff: protected User
-{
+class Staff : public User {
 private:
-	string department;
+    string department;
+
 public:
+    Staff();
+    Staff(string n, string ema, string ID, string dept);
 
-	     Staff();
-		 Staff(string n, string ema, string ID, string dept);
-		 void display_menu(int& currentScreen);
-		 void review_applications(Dynamic_array<Application*>& apps, int& currentScreen);
-		 void update_pet_status(Pet* pet, bool is_Adopted);
-		 void setDepartment(string dept);
-	     string getDepartment();
+    void review_application(Application* app, bool approve);
+    void update_pet_status(Pet* pet, bool is_Adopted);
+    void setDepartment(string dept);
+    string getDepartment();
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif

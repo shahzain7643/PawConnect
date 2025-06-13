@@ -1,8 +1,6 @@
-#include <iostream>
-#include "User.h"
-#include "Dynamic_array.h"
-#include <string>
 #include "Pets.h"
+#include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -19,7 +17,11 @@ void Pet::displayInfo() {
     cout << "Name: " << name << endl;
     cout << "Species: " << species << endl;
     cout << "Age: " << age << endl;
-    cout << "Adoption Status: " << (isadopted ? "Adopted" : "Available") << endl;
+    if (isadopted)
+        cout << "Adoption Status: Adopted" << endl;
+    else
+        cout << "Adoption Status: Available" << endl;
+
 }
 void Pet::setPetID(int ID) {
     petID = ID;
