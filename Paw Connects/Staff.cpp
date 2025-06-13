@@ -1,6 +1,6 @@
 #include "Staff.h"
 #include "Application.h"
-#include "Pets.h"
+#include "Pet.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -11,6 +11,9 @@ Staff::Staff() :department{"null"} {
 
 }
 Staff::Staff(string n, string ema, string ID, string dept) : User(n, ema, ID), department{dept} {
+
+}
+void Staff::display_menu() {
 
 }
 void Staff::review_application(Application* app, bool approve) {

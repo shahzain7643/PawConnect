@@ -17,7 +17,7 @@ private:
 public:
     Staff();
     Staff(string n, string ema, string ID, string dept);
-
+    void display_menu() override;
     void review_application(Application* app, bool approve);
     void update_pet_status(Pet* pet, bool is_Adopted);
     void setDepartment(string dept);

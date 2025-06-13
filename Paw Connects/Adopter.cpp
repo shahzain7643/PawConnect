@@ -2,7 +2,7 @@
 #include "User.h"
 #include "Dynamic_array.h"
 #include <string>
-#include "Pets.h"
+#include "Pet.h"
 #include "Application.h"
 #include "Adopter.h"
 #include "raylib.h"
@@ -14,6 +14,9 @@ Adopter::Adopter() :phonenumber("null") {
 }
 Adopter::Adopter(string n, string ema, string ID, string phonenum) : User(n, ema, ID), phonenumber{ phonenum } {
 
+}
+void Adopter::display_menu() {
+ 
 }
 
 void Adopter::apply_for_application(Pet* pet) {  
@@ -31,7 +34,7 @@ void Adopter::apply_for_application(Pet* pet) {
     Application* newApp = new Application(appID, pet, this, "Pending");
     Applications.push(newApp);
     pet->setIsAdopted(false); 
-    ;
+    
 
     cout << "Adoption application submitted successfully." << endl;
 }
@@ -40,6 +43,9 @@ Dynamic_array<Application*>& Adopter::getApplications() {
 }
 void Adopter::setPhoneNum(string num) {
     phonenumber = num;
+}
+string Adopter::getPhoneNUM() {
+    return phonenumber;
 }
 
 

@@ -1,5 +1,5 @@
 #include "Application.h"
-#include "Pets.h"
+#include "Pet.h"
 #include "Adopter.h"
 #include <iostream>
 #include <string>

@@ -19,10 +19,11 @@ private:
 public:
     Adopter();
     Adopter(string n, string ema, string ID, string phonenum);
-
+    void display_menu() override;
     void apply_for_application(Pet* pet);
     Dynamic_array<Application*>& getApplications();
     void setPhoneNum(string num);
+    string getPhoneNUM();
 };
 
 #endif
