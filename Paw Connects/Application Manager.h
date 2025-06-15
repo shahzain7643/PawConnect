@@ -3,6 +3,9 @@
 
 #include <string>
 #include "Dynamic_array.h"
+#include "Pet Manager.h"
+#include "Adopter.h"
+
 using namespace std;
 
 class Application;
@@ -15,8 +18,8 @@ public:
 	ApplicationManager();
 	void submitApplication(Application* app);
 	void viewApplications();
-	void savetoFile();
-	void loadfromFile();
+	void savetoFile(const string& filename);
+	void loadfromFile(const string& filename, PetManager& petManager, Dynamic_array<Adopter*>& adopters);
 	Application* getApplicationByID(int ID);
 
 };

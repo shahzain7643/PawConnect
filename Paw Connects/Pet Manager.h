@@ -16,6 +16,7 @@ public:
     void DisplayPets();
     Pet* Search_by_id(int id);
     int GetPetCount();
+    Dynamic_array<Pet*>& getPets();
 };
 
 #endif

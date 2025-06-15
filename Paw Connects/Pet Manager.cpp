@@ -30,3 +30,6 @@ Pet* PetManager::Search_by_id(int id) {
 int PetManager::GetPetCount() {
 	return pets.size();
 }
+Dynamic_array<Pet*>& PetManager::getPets() {
+	return pets;
+}
