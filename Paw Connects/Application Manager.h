@@ -21,6 +21,7 @@ public:
 	void savetoFile(const string& filename);
 	void loadfromFile(const string& filename, PetManager& petManager, Dynamic_array<Adopter*>& adopters);
 	Application* getApplicationByID(int ID);
+	Dynamic_array<Application*>& getAllApplications();
 
 };
 

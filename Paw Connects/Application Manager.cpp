@@ -82,4 +82,7 @@ Application* ApplicationManager::getApplicationByID(int ID) {
 	}
 	return nullptr;
 }
+Dynamic_array<Application*>& ApplicationManager::getAllApplications() {
+    return applications;
+}
 
